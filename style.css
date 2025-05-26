@@ -6,20 +6,31 @@
     padding: 20px;
     letter-spacing: 20px;
     font-weight: 500;
+}
 
 
+.login_form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login_button{
+    width: 100%;
 }
 
 body{
-    margin: 50px;
+    margin: 1px 50px 50px 50px;
+    height: 90%;
 }
 
-.box1 h2{
+.box1 h2, h3, h4, h5, h6{
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */;
   
 }
+
+
 
 .box1 button{
     float: right;
@@ -30,3 +41,15 @@ body{
     margin-top: 50px;
 }
 
+td{
+    text-align: center;
+    
+}
+
+
+
+.shrink_width{
+    width: 50%; 
+    margin-left: 25%;
+
+}

@@ -11,5 +11,5 @@
 </head>
 
 <body>
-    <h1 id="main_title">Student Management System</h1>
-    <div class="container"></div>
+    <h1 id="main_title">Leading University, Sylhet</h1>
+    
