@@ -2,7 +2,7 @@
 <?php include('header.php'); ?>
 
 <?php include('dbcon.php'); ?>
-
+<?php include('regx.php'); ?>
 <?php session_start() ?>
 
 <?php
@@ -116,32 +116,32 @@ if (isset($_SESSION['id'])) {
                         <div class="form-group">
                             <div class="form-group">
                                 <label for="f_name"><b>First Name</b></label>
-                                <input type="text" name="f_name" class="form-control border border-dark">
+                                <input type="text" name="f_name" pattern="<?php echo NAME_REGX_HTML; ?>" class="form-control border border-dark" required >
                             </div><br>
 
                             <div class="form-group">
                                 <label for="l_name"><b>Last Name</b></label>
-                                <input type="text" name="l_name" class="form-control border border-dark">
+                                <input type="text" name="l_name" pattern="<?php echo NAME_REGX_HTML; ?>" class="form-control border border-dark" required >
                             </div><br>
 
                             <div class="form-group">
                                 <label for="email"><b>Email</b></label>
-                                <input type="text" name="email" class="form-control border border-dark">
+                                <input type="text" name="email" pattern="<?php echo EMAIL_REGX_HTML; ?>" class="form-control border border-dark" required >
                             </div><br>
 
                             <div class="form-group">
                                 <label for="date_of_birth"><b>Date of Birth</b></label>
-                                <input type="text" name="date_of_birth" class="form-control border border-dark">
+                                <input type="text" name="date_of_birth" pattern="<?php echo DATE_OF_BIRTH_REGX_HTML; ?>" class="form-control border border-dark" required >
                             </div><br>
 
                             <div class="form-group">
                                 <label for="department"><b>Department</b></label>
-                                <input type="text" name="department" class="form-control border border-dark">
+                                <input type="text" name="department" pattern="<?php echo DEPARTMENT_REGX_HTML; ?>" class="form-control border border-dark" required >
                             </div><br>
 
                             <div class="form-group">
                                 <label for="batch"><b>Batch</b></label>
-                                <input type="text" name="batch" class="form-control border border-dark">
+                                <input type="text" name="batch" pattern="<?php echo BATCH_REGX_HTML; ?>" class="form-control border border-dark" required>
                             </div><br>
 
 

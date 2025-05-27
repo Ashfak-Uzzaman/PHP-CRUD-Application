@@ -77,11 +77,12 @@ if (isset($_SESSION['id'])) {
         $semesters = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'];
         foreach ($semesters as $semester) {
             $value = isset($row[$semester]) ? $row[$semester] : '';
-            echo '
-    <div class="form-group"> 
-        <label for="' . $semester . '"><b>' . ucfirst($semester) . ' Semester</b></label> 
-        <input type="number" step="0.01" min="0" max="4" name="' . $semester . '" class="form-control border border-dark" value="' . $value . '"> 
-    </div><br>';
+            echo ' 
+<div class="form-group">  
+    <label for="' . $semester . '"><b>' . ucfirst($semester) . ' Semester</b></label>  
+    <input type="number" step="0.01" min="0" max="4" name="' . $semester . '" class="form-control border border-dark" value="' . $value . '" required>  
+</div><br>';
+
         }
         ?>
 

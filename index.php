@@ -13,18 +13,19 @@ if (isset($_SESSION['id'])) {
 
 ?>
 <?php include('header.php'); ?>
+<?php include('regx.php'); ?>
 
 <div class="container">
   <div class="login_form">
     <form class="form" action="login_process.php" method="post">
       <div class="form-group">
         <label for="email"><b>Email</b></label>
-        <input type="text" name="email" class="form-control border border-dark">
+        <input type="text" name="email" pattern="<?php echo EMAIL_REGX_HTML; ?>" class="form-control border border-dark" required >
       </div>
       <div class="container"></div>
       <div class="form-group">
         <label for="password"><b>Password</b></label>
-        <input type="password" name="password" class="form-control border border-dark">
+        <input type="password" name="password" pattern="<?php echo PASSWORD_REGX_HTML; ?>" class="form-control border border-dark" required >
       </div>
       <div class="container"></div>
       <div class="form-group text-center">

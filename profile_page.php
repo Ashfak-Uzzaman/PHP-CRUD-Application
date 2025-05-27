@@ -96,7 +96,7 @@ if (isset($_SESSION['id'])) {
 
         <div class="form-group">
             <label for="password"><b>Password</b></label>
-            <input type="text" name="password" class="form-control border border-dark"
+            <input type="text" name="password" class="form-control border border-dark" required
                 value="<?php echo $row['password']; ?>">
         </div><br>
 
