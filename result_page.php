@@ -80,7 +80,7 @@ if (isset($_SESSION['id'])) {
             echo '
     <div class="form-group"> 
         <label for="' . $semester . '"><b>' . ucfirst($semester) . ' Semester</b></label> 
-        <input type="text" name="' . $semester . '" class="form-control border border-dark" value="' . $value . '"> 
+        <input type="number" step="0.01" min="0" max="4" name="' . $semester . '" class="form-control border border-dark" value="' . $value . '"> 
     </div><br>';
         }
         ?>
