@@ -20,7 +20,7 @@ if (isset($_SESSION['id'])) {
     <form class="form" action="login_process.php" method="post">
       <div class="form-group">
         <label for="email"><b>Email</b></label>
-        <input type="text" name="email" pattern="<?php echo EMAIL_REGX_HTML; ?>" class="form-control border border-dark" required >
+        <input type="text" name="email" pattern="<?php echo EMAIL_LOGIN_REGX_HTML; ?>" class="form-control border border-dark" required >
       </div>
       <div class="container"></div>
       <div class="form-group">
